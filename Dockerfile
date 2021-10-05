@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM nvidia/cuda:11.3.0-cudnn8-devel-ubuntu20.04
 LABEL version="1.1"
 RUN apt-get update && apt-get install -y wget git && \
     echo 'export PATH=/opt/conda/bin:$PATH' > /etc/profile.d/conda.sh && \
